@@ -58,7 +58,7 @@ public class Test {
 		WebDriverWait wait = new WebDriverWait(Driver.getInstance(), 30);
 		wait.until(ExpectedConditions.visibilityOf(homePage.createAccount));
 		homePage.createAccount.click();
-		
+		System.out.println("Account is created.");
 	}
 
 	@When("^The user fills out the form$")
