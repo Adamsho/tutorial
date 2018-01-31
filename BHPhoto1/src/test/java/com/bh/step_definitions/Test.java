@@ -42,7 +42,7 @@ public class Test {
 	public void the_user_goes_to_tmep_email_Url_and_create_a_temporary_email() throws Throwable {
 		Driver.getInstance().get(ConfigurationReader.getProperty("urlTE"));
 		tempEmail = Driver.getInstance().findElement(By.xpath("//input[@id='mail']")).getAttribute("value");
-
+		System.out.println("Getting the URL");
 	}
 
 	@When("^The user navigates back to BHUrl$")
