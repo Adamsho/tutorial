@@ -35,6 +35,7 @@ public class Test {
 	public void the_user_navigates_the_BHUrl() throws Throwable {
 		Driver.getInstance().get(ConfigurationReader.getProperty("urlBH"));
 		Driver.getInstance().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("Connected to URL");
 	}
 
 	@When("^The user goes to tmep email Url and create a temporary email$")
